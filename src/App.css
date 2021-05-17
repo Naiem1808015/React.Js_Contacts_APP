@@ -1,4 +1,63 @@
-.App {
+@media screen and (max-width: 950px) {
+  .responsiveNavbarDesktop{
+    display: none;
+  }
+  .responsiveFavouriteListDesktop{
+    display: none;
+  }
+  .responsiveListItemDesktop{
+    display: none;
+  }
+  .responsiveCreateDesktop{
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 950px) {
+  .responsiveNavbarMobile{
+    display: none;
+  }
+  .responsiveFavouriteListMobile{
+    display: none;
+  }
+  .responsiveListItemMobile{
+    display: none;
+  }
+  .responsiveCreateMobile{
+    display: none;
+  }
+}
+
+
+
+.MuiAppBar-colorPrimary {
+  background-color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +94,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
