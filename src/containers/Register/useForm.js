@@ -34,11 +34,23 @@ export default () => {
         }
     },[error])
 
+    // useEffect(()=>{
+    //     if(data){
+    //         history.push("/auth/login")
+    //     }
+    // },[data])
+
     useEffect(()=>{
         if(data){
-            history.push("/auth/login")
+            history.push({
+                    pathname: "/auth/login",
+                    form: form
+            })
         }
     },[data])
+
+    // this.props.
+    // })
 
     const registerFormValid =   !form.username?.length 
                                 || !form.firstName?.length 

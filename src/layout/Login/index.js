@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Form,
   Button,
@@ -11,8 +11,10 @@ import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 
 const LoginUI = ({
-  form: { onChange, form, loginFormValid, onSubmit, error, loading },
+  form: { onChange, form, loginFormValid, onSubmit, error, loading , autoName, autoPassword}
 }) => {
+  // console.log("CheckLast:>>",autoName,autoPassword)
+
   return (
     <div>
       <Header />
@@ -26,7 +28,7 @@ const LoginUI = ({
                 {error && <Message content={error?.detail} negative></Message>}
               <Form.Field>
                 <Form.Input
-                  value={form.username || ""}
+                  value={ form.username || ""}
                   onChange={onChange}
                   name="username"
                   placeholder="Username"
@@ -35,7 +37,7 @@ const LoginUI = ({
               </Form.Field>
               <Form.Field>
                 <Form.Input
-                  value={form.password || ""}
+                  value={  form.password || ""}
                   onChange={onChange}
                   type="password"
                   name="password"
