@@ -19,9 +19,9 @@ const RegisterUI = ({
 
       <Grid centered>
         <Grid.Column style={{ maxWidth: 550, marginTop: 20 }}>
-          <SemanticHeader>Signup Here</SemanticHeader>
+          <SemanticHeader style={{marginLeft: "15px"}}>Signup Here</SemanticHeader>
 
-          <Segment>
+          <Segment style={{margin: "10px"}}>
             <Form>
               <Form.Field>
                 <Form.Input

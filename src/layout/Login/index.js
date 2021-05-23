@@ -20,10 +20,10 @@ const LoginUI = ({
       <Header />
 
       <Grid centered>
-        <Grid.Column style={{ maxWidth: 550, marginTop: 20 }}>
-          <SemanticHeader>Login to your account</SemanticHeader>
+        <Grid.Column style={{ maxWidth: 550, marginTop: 20, }}>
+          <SemanticHeader style={{marginLeft: "15px"}}>Login to your account</SemanticHeader>
 
-          <Segment>
+          <Segment style={{margin: "10px"}}>
             <Form>
                 {error && <Message content={error?.detail} negative></Message>}
               <Form.Field>
