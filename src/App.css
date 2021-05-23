@@ -37,6 +37,13 @@
 }
 
 
+@media only screen and (max-width: 1200px) {
+  .modals.dimmer[class*="top aligned"] .modal {
+     margin: 8rem !important;
+  }
+}
+
+
 
 
 

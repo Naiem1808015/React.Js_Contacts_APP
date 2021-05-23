@@ -27,12 +27,6 @@ export default () => {
                 password: autoPassword
             })
         }
-        // if(location?.form){
-        //     setForm({
-        //         ...form,
-        //         password: autoPassword
-        //     })
-        // }
 
     },[location])
 

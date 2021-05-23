@@ -1,4 +1,5 @@
-import { ADD_REMOVE_START_ERROR, ADD_REMOVE_START_LOADING, ADD_REMOVE_START_SUCCESS } from "../../../constants/actionTypes"
+import { ADD_REMOVE_START_ERROR, ADD_REMOVE_START_LOADING, ADD_REMOVE_START_SUCCESS }
+    from "../../../constants/actionTypes"
 import axiosInstance from "../../../helpers/axios"
 
 export default (id, is_favorite) => (dispatch) => {

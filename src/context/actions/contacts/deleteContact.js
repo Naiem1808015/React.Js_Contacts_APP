@@ -1,4 +1,5 @@
-import { DELETE_CONTACT_ERROR, DELETE_CONTACT_LOADING, DELETE_CONTACT_SUCCESS } from "../../../constants/actionTypes"
+import { DELETE_CONTACT_ERROR, DELETE_CONTACT_LOADING, DELETE_CONTACT_SUCCESS }
+    from "../../../constants/actionTypes"
 import axiosInstance from "../../../helpers/axios"
 
 export default (id) => (dispatch) => {

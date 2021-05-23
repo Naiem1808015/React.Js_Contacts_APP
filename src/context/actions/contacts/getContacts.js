@@ -1,4 +1,5 @@
-import { CONTACTS_LOADING, CONTACTS_LOAD_ERROR, CONTACTS_LOAD_SUCCESS } from "../../../constants/actionTypes"
+import { CONTACTS_LOADING, CONTACTS_LOAD_ERROR, CONTACTS_LOAD_SUCCESS }
+    from "../../../constants/actionTypes"
 import { CONNECTION_ERROR } from "../../../constants/api"
 import axiosInstance from "../../../helpers/axios"
 

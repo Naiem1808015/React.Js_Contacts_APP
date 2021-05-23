@@ -17,7 +17,7 @@ const CreateContact = ({onImageChange, tempFile, onChange, formIsHalfFilled, loa
 
     return (
                 <div>
-                    <Prompt 
+                    <Prompt
                         when={formIsHalfFilled} 
                         message={JSON.stringify({
                             header: "Confirm", 
@@ -39,6 +39,7 @@ const CreateContact = ({onImageChange, tempFile, onChange, formIsHalfFilled, loa
                                         accept="images/*"
                                         hidden
                                     />
+
 
                                     <div className="image-wrapper">
                                     {tempFile && <Image className="contactPicture" src={tempFile}/>}
@@ -102,6 +103,7 @@ const CreateContact = ({onImageChange, tempFile, onChange, formIsHalfFilled, loa
 
                     <div className="responsiveCreateMobile">
                     <Container style={{marginTop: "15px"}}>
+                        <SemanticHeader style={{marginBottom:"50px"}}>Create Contact</SemanticHeader>
                     <Form>
                                 <input
                                         onChange={onImageChange}
